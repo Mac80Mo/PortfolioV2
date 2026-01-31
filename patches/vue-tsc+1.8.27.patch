@@ -1,0 +1,17 @@
+diff --git a/node_modules/vue-tsc/bin/vue-tsc.js b/node_modules/vue-tsc/bin/vue-tsc.js
+index 6b7193c..b26ccd6 100755
+--- a/node_modules/vue-tsc/bin/vue-tsc.js
++++ b/node_modules/vue-tsc/bin/vue-tsc.js
+@@ -12,9 +12,9 @@ fs.readFileSync = (...args) => {
+ 		let tsc = readFileSync(...args);
+ 
+ 		// add *.vue files to allow extensions
+-		tryReplace(/supportedTSExtensions = .*(?=;)/, s => s + '.concat([[".vue"]])');
+-		tryReplace(/supportedJSExtensions = .*(?=;)/, s => s + '.concat([[".vue"]])');
+-		tryReplace(/allSupportedExtensions = .*(?=;)/, s => s + '.concat([[".vue"]])');
++				tryReplace(/supportedTSExtensions = [\s\S]*?(?=;)/, s => s + '.concat([[".vue"]])');
++				tryReplace(/supportedJSExtensions = [\s\S]*?(?=;)/, s => s + '.concat([[".vue"]])');
++				tryReplace(/allSupportedExtensions = [\s\S]*?(?=;)/, s => s + '.concat([[".vue"]])');
+ 
+ 		// proxy createProgram apis
+ 		tryReplace(/function createProgram\(.+\) {/, s => s + ` return require(${JSON.stringify(proxyApiPath)}).createProgram(...arguments);`);
