@@ -1,6 +1,13 @@
 <template>
   <div class="animated-background" :class="{ 'light-theme': !theme.global.current.value.dark }">
-    <!-- Linien werden von index.html gerendert, hier nur Theme-Wrapper -->
+    <div class="blue-line" style="top: 8%; animation-duration: 28s; animation-delay: 0s; opacity: 0.3;"></div>
+    <div class="blue-line" style="top: 23%; animation-duration: 32s; animation-delay: 4.3s; opacity: 0.22;"></div>
+    <div class="blue-line" style="top: 37%; animation-duration: 25s; animation-delay: 7.8s; opacity: 0.38;"></div>
+    <div class="blue-line" style="top: 51%; animation-duration: 30s; animation-delay: 2.1s; opacity: 0.26;"></div>
+    <div class="blue-line" style="top: 64%; animation-duration: 35s; animation-delay: 9.5s; opacity: 0.34;"></div>
+    <div class="blue-line" style="top: 76%; animation-duration: 22s; animation-delay: 5.7s; opacity: 0.22;"></div>
+    <div class="blue-line" style="top: 88%; animation-duration: 26s; animation-delay: 1.4s; opacity: 0.3;"></div>
+    <div class="blue-line" style="top: 95%; animation-duration: 29s; animation-delay: 6.2s; opacity: 0.26;"></div>
   </div>
 </template>
 
