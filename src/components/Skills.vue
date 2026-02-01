@@ -33,6 +33,8 @@
 </template>
 
 <script setup lang="ts">
+import { icons } from '../plugins/icons'
+
 interface Skill {
   name: string
   icon: string
@@ -43,73 +45,73 @@ interface Skill {
 const skills: Skill[] = [
   {
     name: 'Python',
-    icon: 'mdi-language-python',
+    icon: icons.languagePython,
     color: 'blue',
     description: 'Vielseitige Programmiersprache'
   },
   {
     name: 'JavaScript',
-    icon: 'mdi-language-javascript',
+    icon: icons.languageJavascript,
     color: 'yellow',
     description: 'Die Sprache des Webs'
   },
   {
     name: 'TypeScript',
-    icon: 'mdi-language-typescript',
+    icon: icons.languageTypescript,
     color: 'blue',
     description: 'Typsicheres JavaScript für skalierbare Projekte'
   },
   {
     name: 'HTML/CSS',
-    icon: 'mdi-language-html5',
+    icon: icons.languageHtml5,
     color: 'orange',
     description: 'Grundlagen für modernes Webdesign'
   },
   {
     name: 'Vue.js',
-    icon: 'mdi-vuejs',
+    icon: icons.vuejs,
     color: 'green',
     description: 'Modern Frontend Framework für reaktive Anwendungen'
   },
   {
     name: 'Vuetify',
-    icon: 'mdi-vuetify',
+    icon: icons.vuetify,
     color: 'primary',
     description: 'Material Design Komponenten für Vue'
   },
   {
     name: 'Git',
-    icon: 'mdi-git',
+    icon: icons.git,
     color: 'red',
     description: 'Versionskontrolle für effiziente Zusammenarbeit'
   },
   {
     name: 'SQL',
-    icon: 'mdi-database',
+    icon: icons.database,
     color: 'purple',
     description: 'Datenbankabfragen und Datenverwaltung'
   },
   {
     name: 'Java',
-    icon: 'mdi-language-java',
+    icon: icons.languageJava,
     color: 'red',
     description: 'Objektorientierte Programmierung für Enterprise-Lösungen'
   },
   {
     name: 'Node.js',
-    icon: 'mdi-nodejs',
+    icon: icons.nodejs,
     color: 'green',
     description: 'JavaScript-Laufzeitumgebung für Backend-Entwicklung'
   },
   {
     name: 'Arduino',
-    icon: 'mdi-chip',
+    icon: icons.chip,
     color: 'teal',
     description: 'Mikrocontroller-Programmierung für IoT-Projekte'
   },
   {
     name: 'LLM\'s',
-    icon: 'mdi-brain',
+    icon: icons.brain,
     color: 'purple',
     description: 'Integration und Anwendung von Large Language Models'
   }

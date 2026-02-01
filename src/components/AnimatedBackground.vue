@@ -61,19 +61,21 @@ onMounted(() => {
     transparent 60%,
     transparent 100%
   );
-  transform: rotate(-25deg);
+  transform: translateZ(0) rotate(-25deg);
   box-shadow: 
     0 0 15px rgba(25, 118, 210, 0.3),
     0 0 30px rgba(25, 118, 210, 0.18);
   animation: shimmer linear infinite;
+  animation-fill-mode: backwards;
+  will-change: transform;
 }
 
 @keyframes shimmer {
   0% {
-    transform: translateX(-100%) rotate(-25deg);
+    transform: translateX(-100%) rotate(-25deg) translateZ(0);
   }
   100% {
-    transform: translateX(100%) rotate(-25deg);
+    transform: translateX(100%) rotate(-25deg) translateZ(0);
   }
 }
 

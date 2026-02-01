@@ -17,6 +17,7 @@
     "vuetify": "^3.5.1"
   },
   "devDependencies": {
+    "@mdi/js": "^7.4.47",
     "@types/node": "^25.0.10",
     "@vitejs/plugin-vue": "^5.0.3",
     "gh-pages": "^6.3.0",

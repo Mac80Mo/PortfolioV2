@@ -24,7 +24,7 @@
             >
               <template v-slot:placeholder>
                 <v-row class="fill-height ma-0" align="center" justify="center">
-                  <v-icon size="64" color="grey">mdi-certificate</v-icon>
+                  <v-icon size="64" color="grey">{{ icons.certificate }}</v-icon>
                 </v-row>
               </template>
             </v-img>
@@ -44,7 +44,7 @@
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-chip size="small" color="primary" variant="flat">
-                <v-icon start size="small">mdi-calendar</v-icon>
+                <v-icon start size="small">{{ icons.calendar }}</v-icon>
                 {{ certificate.year }}
               </v-chip>
             </v-card-actions>
@@ -56,6 +56,7 @@
 </template>
 
 <script setup lang="ts">
+import { icons } from '../plugins/icons'
 import { computed } from 'vue'
 import cert1 from '@/assets/images/certificates/cert1.png'
 import cert2 from '@/assets/images/certificates/cert2.png'

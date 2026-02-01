@@ -27,24 +27,24 @@
             </v-card-text>
             <v-card-actions class="flex-wrap pa-4 gap-2">
               <v-chip size="small" :color="kurs.anbieter === 'Programmieren Starten GmbH' ? 'light-blue' : 'primary'" variant="outlined">
-                <v-icon start size="small">mdi-school</v-icon>
+                <v-icon start size="small">{{ icons.school }}</v-icon>
                 {{ kurs.anbieter }}
               </v-chip>
               <v-chip size="small" :color="kurs.sprache === 'Englisch' ? 'light-blue' : 'primary'" variant="outlined">
-                <v-icon start size="small">mdi-translate</v-icon>
+                <v-icon start size="small">{{ icons.translate }}</v-icon>
                 {{ kurs.sprache }}
               </v-chip>
               <v-chip v-if="kurs.dauer" size="small" color="primary" variant="outlined">
-                <v-icon start size="small">mdi-clock-outline</v-icon>
+                <v-icon start size="small">{{ icons.clockOutline }}</v-icon>
                 {{ kurs.dauer }}
               </v-chip>
               <v-chip size="small" :color="kurs.abschluss === 'Zertifikat' ? 'light-blue' : 'primary'" variant="outlined">
-                <v-icon start size="small">mdi-certificate</v-icon>
+                <v-icon start size="small">{{ icons.certificate }}</v-icon>
                 {{ kurs.abschluss }}
               </v-chip>
               <v-spacer></v-spacer>
               <v-chip size="small" color="primary" variant="flat">
-                <v-icon start size="small">mdi-calendar</v-icon>
+                <v-icon start size="small">{{ icons.calendar }}</v-icon>
                 {{ kurs.datum }}
               </v-chip>
             </v-card-actions>
@@ -56,6 +56,7 @@
 </template>
 
 <script setup lang="ts">
+import { icons } from '../plugins/icons'
 import { computed } from 'vue'
 
 interface Kurs {
@@ -67,7 +68,7 @@ interface Kurs {
   abschluss: string
   datum: string
   sortDate: Date
-  icon: string
+  icon: any
   color: string
 }
 
@@ -81,7 +82,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Zertifikat',
     datum: 'Dezember 2024',
     sortDate: new Date('2024-12-17'),
-    icon: 'mdi-language-java',
+    icon: icons.languageJava,
     color: 'blue'
   },
   {
@@ -93,7 +94,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Zertifikat',
     datum: 'April 2024',
     sortDate: new Date('2024-04-04'),
-    icon: 'mdi-language-python',
+    icon: icons.languagePython,
     color: 'blue'
   },
   {
@@ -105,7 +106,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'Juni 2024',
     sortDate: new Date('2024-06-01'),
-    icon: 'mdi-console',
+    icon: icons.console,
     color: 'grey'
   },
   {
@@ -117,7 +118,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'Oktober 2025',
     sortDate: new Date('2025-10-17'),
-    icon: 'mdi-file-chart',
+    icon: icons.fileChart,
     color: 'purple'
   },
   {
@@ -129,7 +130,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'Januar 2026',
     sortDate: new Date('2026-01-21'),
-    icon: 'mdi-application-brackets',
+    icon: icons.applicationBrackets,
     color: 'green'
   },
   {
@@ -141,7 +142,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'September 2024',
     sortDate: new Date('2024-09-17'),
-    icon: 'mdi-powershell',
+    icon: icons.powershell,
     color: 'blue'
   },
   {
@@ -153,7 +154,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'Juli 2025',
     sortDate: new Date('2025-07-26'),
-    icon: 'mdi-language-typescript',
+    icon: icons.languageTypescript,
     color: 'blue'
   },
   {
@@ -165,7 +166,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'Dezember 2024',
     sortDate: new Date('2024-12-26'),
-    icon: 'mdi-git',
+    icon: icons.git,
     color: 'orange'
   },
   {
@@ -177,7 +178,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'September 2024',
     sortDate: new Date('2024-09-24'),
-    icon: 'mdi-language-html5',
+    icon: icons.languageHtml5,
     color: 'orange'
   },
   {
@@ -189,7 +190,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'Oktober 2025',
     sortDate: new Date('2025-10-28'),
-    icon: 'mdi-ip-network',
+    icon: icons.ipNetwork,
     color: 'green'
   },
   {
@@ -201,7 +202,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'August 2025',
     sortDate: new Date('2025-08-13'),
-    icon: 'mdi-language-javascript',
+    icon: icons.languageJavascript,
     color: 'yellow'
   },
   {
@@ -213,7 +214,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'November 2024',
     sortDate: new Date('2024-11-05'),
-    icon: 'mdi-language-javascript',
+    icon: icons.languageJavascript,
     color: 'yellow'
   },
   {
@@ -225,7 +226,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'September 2025',
     sortDate: new Date('2025-09-11'),
-    icon: 'mdi-language-javascript',
+    icon: icons.languageJavascript,
     color: 'yellow'
   },
   {
@@ -237,7 +238,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'März 2025',
     sortDate: new Date('2025-03-01'),
-    icon: 'mdi-jira',
+    icon: icons.jira,
     color: 'blue'
   },
   {
@@ -249,7 +250,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'September 2025',
     sortDate: new Date('2025-09-25'),
-    icon: 'mdi-layers',
+    icon: icons.layers,
     color: 'blue'
   },
   {
@@ -261,7 +262,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'Februar 2025',
     sortDate: new Date('2025-02-10'),
-    icon: 'mdi-robot',
+    icon: icons.robot,
     color: 'green'
   },
   {
@@ -273,7 +274,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'Januar 2025',
     sortDate: new Date('2025-01-30'),
-    icon: 'mdi-brain',
+    icon: icons.brain,
     color: 'purple'
   },
   {
@@ -285,7 +286,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'Juni 2025',
     sortDate: new Date('2025-06-13'),
-    icon: 'mdi-react',
+    icon: icons.react,
     color: 'cyan'
   },
   {
@@ -297,7 +298,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'September 2025',
     sortDate: new Date('2025-09-28'),
-    icon: 'mdi-floor-plan',
+    icon: icons.floorPlan,
     color: 'grey'
   },
   {
@@ -309,7 +310,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'Dezember 2024',
     sortDate: new Date('2024-12-19'),
-    icon: 'mdi-database',
+    icon: icons.database,
     color: 'blue'
   },
   {
@@ -321,7 +322,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'Oktober 2025',
     sortDate: new Date('2025-10-07'),
-    icon: 'mdi-server-network',
+    icon: icons.serverNetwork,
     color: 'green'
   },
   {
@@ -333,7 +334,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'Oktober 2025',
     sortDate: new Date('2025-10-13'),
-    icon: 'mdi-file-chart',
+    icon: icons.fileChart,
     color: 'purple'
   },
   {
@@ -345,7 +346,7 @@ const kurseData: Kurs[] = [
     abschluss: 'Abschlussbescheinigung',
     datum: 'August 2025',
     sortDate: new Date('2025-08-02'),
-    icon: 'mdi-vuejs',
+    icon: icons.vuejs,
     color: 'green'
   },
 ]

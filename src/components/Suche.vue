@@ -12,7 +12,7 @@
           <v-text-field
             v-model="searchQuery"
             label="Suche nach weiteren Technologien, Frameworks, Tools..."
-            prepend-inner-icon="mdi-magnify"
+            :prepend-inner-icon="icons.magnify"
             clearable
             variant="outlined"
             density="comfortable"
@@ -26,7 +26,7 @@
       <v-row v-if="searchQuery && filteredSkills.length === 0">
         <v-col cols="12">
           <v-alert type="info" variant="tonal" class="text-center">
-            <v-icon size="large" class="mb-2">mdi-information-outline</v-icon>
+            <v-icon size="large" class="mb-2">{{ icons.informationOutline }}</v-icon>
             <div class="text-h6">Keine Ergebnisse gefunden</div>
             <div class="text-body-2">Versuche es mit anderen Suchbegriffen wie "python", "frontend" oder "devops"</div>
           </v-alert>
@@ -36,7 +36,7 @@
       <v-row v-if="!searchQuery">
         <v-col cols="12">
           <div class="text-center text-medium-emphasis mb-8">
-            <v-icon size="48" color="primary" class="mb-2">mdi-database-search</v-icon>
+            <v-icon size="48" color="primary" class="mb-2">{{ icons.databaseSearch }}</v-icon>
             <p class="text-body-1">Starte deine Suche um aus {{ skills.length }} Technologien zu filtern</p>
             <div class="d-flex justify-center mt-4">
               <v-chip-group>
@@ -113,6 +113,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+import { icons } from '../plugins/icons'
 import { searchableSkills, type SearchableSkill } from '../data/skills'
 
 const searchQuery = ref('')

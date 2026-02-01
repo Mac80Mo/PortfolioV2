@@ -5,32 +5,32 @@
     <v-navigation-drawer v-model="drawer" temporary>
       <v-list>
         <v-list-item
-          prepend-icon="mdi-home"
+          :prepend-icon="icons.home"
           title="Start"
           @click="scrollTo('hero')"
         ></v-list-item>
         <v-list-item
-          prepend-icon="mdi-account"
+          :prepend-icon="icons.account"
           title="Über mich"
           @click="scrollTo('about')"
         ></v-list-item>
         <v-list-item
-          prepend-icon="mdi-code-tags"
+          :prepend-icon="icons.codeTags"
           title="Fähigkeiten"
           @click="scrollTo('skills')"
         ></v-list-item>
         <v-list-item
-          prepend-icon="mdi-database-search"
+          :prepend-icon="icons.databaseSearch"
           title="Erweiterte-Suche"
           @click="scrollTo('suche')"
         ></v-list-item>
         <v-list-item
-          prepend-icon="mdi-certificate"
+          :prepend-icon="icons.certificate"
           title="Zertifikate"
           @click="scrollTo('certificates')"
         ></v-list-item>
         <v-list-item
-          prepend-icon="mdi-school"
+          :prepend-icon="icons.school"
           title="Kurse"
           @click="scrollTo('kurse')"
         ></v-list-item>
@@ -47,7 +47,7 @@
       <v-spacer></v-spacer>
       
       <v-btn icon @click="toggleTheme">
-        <v-icon>{{ theme.global.current.value.dark ? 'mdi-weather-sunny' : 'mdi-weather-night' }}</v-icon>
+        <v-icon>{{ theme.global.current.value.dark ? icons.weatherSunny : icons.weatherNight }}</v-icon>
       </v-btn>
     </v-app-bar>
 
@@ -73,6 +73,7 @@
 import { ref } from 'vue'
 import { useTheme } from 'vuetify'
 import AnimatedBackground from './components/AnimatedBackground.vue'
+import { icons } from './plugins/icons'
 
 const theme = useTheme()
 const drawer = ref(false)

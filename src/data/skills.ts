@@ -1,9 +1,11 @@
+import { icons } from '../plugins/icons'
+
 export interface SearchableSkill {
   id: string
   label: string
   keywords: string[]
   category: string
-  icon: string
+  icon: any
   color: string
 }
 
@@ -14,7 +16,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Python',
     keywords: ['python', 'py', 'backend', 'scripting', 'ki', 'ai', 'machine learning'],
     category: 'Programmiersprachen',
-    icon: 'mdi-language-python',
+    icon: icons.languagePython,
     color: 'blue'
   },
   {
@@ -22,7 +24,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'JavaScript',
     keywords: ['javascript', 'js', 'ecmascript', 'es6', 'web', 'frontend', 'backend'],
     category: 'Programmiersprachen',
-    icon: 'mdi-language-javascript',
+    icon: icons.languageJavascript,
     color: 'yellow'
   },
   {
@@ -30,7 +32,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'TypeScript',
     keywords: ['typescript', 'ts', 'javascript', 'typed', 'frontend', 'backend'],
     category: 'Programmiersprachen',
-    icon: 'mdi-language-typescript',
+    icon: icons.languageTypescript,
     color: 'blue'
   },
   {
@@ -38,7 +40,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Java',
     keywords: ['java', 'jvm', 'backend', 'enterprise', 'oop'],
     category: 'Programmiersprachen',
-    icon: 'mdi-language-java',
+    icon: icons.languageJava,
     color: 'red'
   },
   {
@@ -46,7 +48,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'PHP',
     keywords: ['php', 'backend', 'web', 'server', 'scripting'],
     category: 'Programmiersprachen',
-    icon: 'mdi-language-php',
+    icon: icons.languagePhp,
     color: 'purple'
   },
   
@@ -56,7 +58,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Vue.js',
     keywords: ['vue', 'vue3', 'vuejs', 'frontend', 'framework', 'javascript', 'reactive'],
     category: 'Frontend',
-    icon: 'mdi-vuejs',
+    icon: icons.vuejs,
     color: 'green'
   },
   {
@@ -64,7 +66,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Vuetify',
     keywords: ['vuetify', 'vue', 'material', 'design', 'ui', 'components', 'framework'],
     category: 'Frontend',
-    icon: 'mdi-vuetify',
+    icon: icons.vuetify,
     color: 'primary'
   },
   {
@@ -72,7 +74,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'React',
     keywords: ['react', 'reactjs', 'frontend', 'framework', 'javascript', 'jsx', 'components'],
     category: 'Frontend',
-    icon: 'mdi-react',
+    icon: icons.react,
     color: 'cyan'
   },
   {
@@ -80,7 +82,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Tkinter',
     keywords: ['tkinter', 'python', 'gui', 'desktop', 'ui', 'interface'],
     category: 'Frontend',
-    icon: 'mdi-application-outline',
+    icon: icons.applicationOutline,
     color: 'blue'
   },
   
@@ -90,7 +92,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'HTML5',
     keywords: ['html', 'html5', 'web', 'markup', 'frontend', 'webdesign'],
     category: 'Web',
-    icon: 'mdi-language-html5',
+    icon: icons.languageHtml5,
     color: 'orange'
   },
   {
@@ -98,7 +100,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'CSS3',
     keywords: ['css', 'css3', 'style', 'web', 'frontend', 'design', 'layout'],
     category: 'Web',
-    icon: 'mdi-language-css3',
+    icon: icons.languageCss3,
     color: 'blue'
   },
   {
@@ -106,7 +108,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Bootstrap',
     keywords: ['bootstrap', 'css', 'framework', 'responsive', 'frontend', 'ui'],
     category: 'Web',
-    icon: 'mdi-bootstrap',
+    icon: icons.bootstrap,
     color: 'purple'
   },
   
@@ -116,7 +118,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Node.js',
     keywords: ['node', 'nodejs', 'javascript', 'backend', 'server', 'runtime'],
     category: 'Backend',
-    icon: 'mdi-nodejs',
+    icon: icons.nodejs,
     color: 'green'
   },
   {
@@ -124,7 +126,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Express.js',
     keywords: ['express', 'expressjs', 'node', 'backend', 'api', 'rest', 'javascript'],
     category: 'Backend',
-    icon: 'mdi-nodejs',
+    icon: icons.nodejs,
     color: 'grey'
   },
   {
@@ -132,7 +134,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Flask',
     keywords: ['flask', 'python', 'backend', 'micro', 'framework', 'web'],
     category: 'Backend',
-    icon: 'mdi-flask',
+    icon: icons.flask,
     color: 'blue'
   },
   
@@ -142,7 +144,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'SQL',
     keywords: ['sql', 'database', 'relational', 'query', 'datenbank'],
     category: 'Datenbanken',
-    icon: 'mdi-database',
+    icon: icons.database,
     color: 'purple'
   },
   {
@@ -150,7 +152,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'MySQL',
     keywords: ['mysql', 'sql', 'database', 'relational', 'db', 'datenbank'],
     category: 'Datenbanken',
-    icon: 'mdi-database',
+    icon: icons.database,
     color: 'blue'
   },
   {
@@ -158,7 +160,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'PostgreSQL',
     keywords: ['postgresql', 'postgres', 'sql', 'database', 'relational', 'db'],
     category: 'Datenbanken',
-    icon: 'mdi-database',
+    icon: icons.database,
     color: 'blue'
   },
   
@@ -168,7 +170,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Git',
     keywords: ['git', 'version', 'control', 'vcs', 'github', 'gitlab', 'versionskontrolle'],
     category: 'Tools',
-    icon: 'mdi-git',
+    icon: icons.git,
     color: 'orange'
   },
   {
@@ -176,7 +178,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'GitHub',
     keywords: ['github', 'git', 'repository', 'vcs', 'collaboration', 'version control'],
     category: 'Tools',
-    icon: 'mdi-github',
+    icon: icons.github,
     color: 'grey'
   },
   {
@@ -184,7 +186,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'BitBucket',
     keywords: ['bitbucket', 'git', 'repository', 'vcs', 'atlassian', 'version control'],
     category: 'Tools',
-    icon: 'mdi-bitbucket',
+    icon: icons.bitbucket,
     color: 'blue'
   },
   {
@@ -192,7 +194,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Jira',
     keywords: ['jira', 'project', 'management', 'agile', 'tracking', 'projektmanagement'],
     category: 'Tools',
-    icon: 'mdi-jira',
+    icon: icons.jira,
     color: 'blue'
   },
   {
@@ -200,7 +202,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Confluence',
     keywords: ['confluence', 'documentation', 'wiki', 'collaboration', 'atlassian'],
     category: 'Tools',
-    icon: 'mdi-book-open-page-variant',
+    icon: icons.bookOpenPageVariant,
     color: 'blue'
   },
   {
@@ -208,7 +210,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Postman',
     keywords: ['postman', 'api', 'testing', 'rest', 'http', 'debugging'],
     category: 'Tools',
-    icon: 'mdi-api',
+    icon: icons.api,
     color: 'orange'
   },
   {
@@ -216,7 +218,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'PowerShell',
     keywords: ['powershell', 'windows', 'scripting', 'automation', 'shell', 'cmd'],
     category: 'Tools',
-    icon: 'mdi-powershell',
+    icon: icons.powershell,
     color: 'blue'
   },
   {
@@ -224,7 +226,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Command Line',
     keywords: ['cmd', 'command line', 'terminal', 'shell', 'console', 'cli'],
     category: 'Tools',
-    icon: 'mdi-console',
+    icon: icons.console,
     color: 'grey'
   },
   {
@@ -232,7 +234,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Visual Studio Code',
     keywords: ['vscode', 'vs code', 'ide', 'editor', 'microsoft', 'coding'],
     category: 'IDEs',
-    icon: 'mdi-microsoft-visual-studio-code',
+    icon: icons.microsoftVisualStudioCode,
     color: 'blue'
   },
   {
@@ -240,7 +242,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'PyCharm',
     keywords: ['pycharm', 'ide', 'python', 'jetbrains', 'editor'],
     category: 'IDEs',
-    icon: 'mdi-laptop',
+    icon: icons.laptop,
     color: 'green'
   },
   {
@@ -248,7 +250,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Eclipse',
     keywords: ['eclipse', 'ide', 'java', 'editor', 'development'],
     category: 'IDEs',
-    icon: 'mdi-eclipse',
+    icon: icons.codeTags,
     color: 'purple'
   },
   {
@@ -256,7 +258,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'JetBrains IDEs',
     keywords: ['jetbrains', 'intellij', 'ide', 'pycharm', 'webstorm', 'editor'],
     category: 'IDEs',
-    icon: 'mdi-alpha-j-box',
+    icon: icons.alphaJBox,
     color: 'blue'
   },
   
@@ -266,7 +268,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Arduino',
     keywords: ['arduino', 'microcontroller', 'iot', 'embedded', 'hardware', 'mikrocontroller'],
     category: 'IoT',
-    icon: 'mdi-chip',
+    icon: icons.chip,
     color: 'teal'
   },
   
@@ -276,7 +278,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Large Language Models',
     keywords: ['llm', 'gpt', 'ai', 'ki', 'openai', 'chatgpt', 'language model', 'open-source'],
     category: 'AI/ML',
-    icon: 'mdi-brain',
+    icon: icons.brain,
     color: 'purple'
   },
   {
@@ -284,7 +286,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Ollama',
     keywords: ['ollama', 'llm', 'local', 'ai', 'open-source', 'models'],
     category: 'AI/ML',
-    icon: 'mdi-robot',
+    icon: icons.robot,
     color: 'green'
   },
   {
@@ -292,7 +294,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Llama',
     keywords: ['llama', 'llama2', 'llama3', 'meta', 'llm', 'ai', 'open-source'],
     category: 'AI/ML',
-    icon: 'mdi-robot-outline',
+    icon: icons.robotOutline,
     color: 'blue'
   },
   {
@@ -300,7 +302,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Claude',
     keywords: ['claude', 'anthropic', 'ai', 'llm', 'chatbot', 'assistant'],
     category: 'AI/ML',
-    icon: 'mdi-brain',
+    icon: icons.brain,
     color: 'orange'
   },
   {
@@ -308,7 +310,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Qwen',
     keywords: ['qwen', 'alibaba', 'llm', 'ai', 'chinese', 'model'],
     category: 'AI/ML',
-    icon: 'mdi-robot',
+    icon: icons.robot,
     color: 'red'
   },
   {
@@ -316,7 +318,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Hugging Face',
     keywords: ['huggingface', 'hf', 'ai', 'models', 'transformers', 'ml', 'hub'],
     category: 'AI/ML',
-    icon: 'mdi-emoticon-happy-outline',
+    icon: icons.emoticonHappyOutline,
     color: 'yellow'
   },
   {
@@ -324,7 +326,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'ChatGPT',
     keywords: ['chatgpt', 'gpt', 'openai', 'ai', 'llm', 'chatbot', 'assistant'],
     category: 'AI/ML',
-    icon: 'mdi-robot',
+    icon: icons.robot,
     color: 'green'
   },
   {
@@ -332,7 +334,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Dolphin',
     keywords: ['dolphin', 'uncensored', 'llm', 'ai', 'unzensiert', 'open-source'],
     category: 'AI/ML',
-    icon: 'mdi-robot-angry',
+    icon: icons.robotAngry,
     color: 'blue'
   },
   {
@@ -340,7 +342,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Nele.ai',
     keywords: ['nele', 'nele.ai', 'eu ai act', 'compliant', 'llm', 'ai', 'konform', 'europa'],
     category: 'AI/ML',
-    icon: 'mdi-shield-check',
+    icon: icons.shieldCheck,
     color: 'blue'
   },
   {
@@ -348,7 +350,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'LangChain',
     keywords: ['langchain', 'llm', 'ai', 'framework', 'python', 'javascript', 'agents'],
     category: 'AI/ML',
-    icon: 'mdi-link-variant',
+    icon: icons.linkVariant,
     color: 'green'
   },
   {
@@ -356,7 +358,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'TensorFlow',
     keywords: ['tensorflow', 'ai', 'ml', 'machine learning', 'deep learning', 'neural', 'google'],
     category: 'AI/ML',
-    icon: 'mdi-brain',
+    icon: icons.brain,
     color: 'orange'
   },
   {
@@ -364,7 +366,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'WebUI',
     keywords: ['webui', 'llm', 'interface', 'ui', 'stable diffusion', 'ai'],
     category: 'AI/ML',
-    icon: 'mdi-web',
+    icon: icons.web,
     color: 'purple'
   },
   
@@ -374,7 +376,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'UML',
     keywords: ['uml', 'unified modeling language', 'class diagram', 'modeling', 'software design'],
     category: 'Methodik',
-    icon: 'mdi-file-chart',
+    icon: icons.fileChart,
     color: 'purple'
   },
   {
@@ -382,7 +384,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'BPMN',
     keywords: ['bpmn', 'business process', 'modeling', 'workflow', 'prozess'],
     category: 'Methodik',
-    icon: 'mdi-file-chart',
+    icon: icons.fileChart,
     color: 'purple'
   },
   
@@ -392,7 +394,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Scrum',
     keywords: ['scrum', 'agile', 'methodology', 'sprint', 'project', 'exin'],
     category: 'Methodik',
-    icon: 'mdi-run-fast',
+    icon: icons.runFast,
     color: 'blue'
   },
   
@@ -402,7 +404,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'IPv4 Subnetting',
     keywords: ['ipv4', 'subnetting', 'network', 'netzwerk', 'ip', 'subnet'],
     category: 'Netzwerktechnik',
-    icon: 'mdi-ip-network',
+    icon: icons.ipNetwork,
     color: 'green'
   },
   {
@@ -410,7 +412,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'OSI-Modell',
     keywords: ['osi', 'osi-modell', 'network', 'layers', 'netzwerktechnik', 'schichten'],
     category: 'Netzwerktechnik',
-    icon: 'mdi-layers',
+    icon: icons.layers,
     color: 'blue'
   },
   
@@ -420,7 +422,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Software Architecture',
     keywords: ['architecture', 'software', 'design', 'patterns', 'system design', 'architektur'],
     category: 'Architektur',
-    icon: 'mdi-floor-plan',
+    icon: icons.floorPlan,
     color: 'grey'
   },
   {
@@ -428,7 +430,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'System Design',
     keywords: ['system design', 'scalable', 'backend', 'architecture', 'distributed'],
     category: 'Architektur',
-    icon: 'mdi-server-network',
+    icon: icons.serverNetwork,
     color: 'green'
   },
   
@@ -438,7 +440,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Browser Developer Tools',
     keywords: ['devtools', 'browser', 'debug', 'chrome', 'firefox', 'developer tools'],
     category: 'Tools',
-    icon: 'mdi-application-brackets',
+    icon: icons.applicationBrackets,
     color: 'green'
   },
   {
@@ -446,7 +448,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Vite',
     keywords: ['vite', 'bundler', 'build', 'fast', 'vue', 'frontend'],
     category: 'Build Tools',
-    icon: 'mdi-flash',
+    icon: icons.flash,
     color: 'purple'
   },
   {
@@ -454,7 +456,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Joi Validation',
     keywords: ['joi', 'validation', 'schema', 'javascript', 'node', 'api'],
     category: 'Tools',
-    icon: 'mdi-check-circle',
+    icon: icons.checkCircle,
     color: 'green'
   },
   {
@@ -462,7 +464,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'n8n',
     keywords: ['n8n', 'workflow', 'automation', 'no-code', 'integration', 'zapier'],
     category: 'Tools',
-    icon: 'mdi-workflow',
+    icon: icons.git,
     color: 'red'
   },
   
@@ -472,7 +474,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Docker',
     keywords: ['docker', 'container', 'virtualization', 'deployment', 'devops'],
     category: 'DevOps',
-    icon: 'mdi-docker',
+    icon: icons.docker,
     color: 'blue'
   },
   {
@@ -480,7 +482,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'VirtualBox',
     keywords: ['virtualbox', 'vm', 'virtualization', 'oracle', 'virtual machine'],
     category: 'DevOps',
-    icon: 'mdi-desktop-tower',
+    icon: icons.desktopTower,
     color: 'blue'
   },
   
@@ -490,7 +492,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Windows 10',
     keywords: ['windows', 'windows 10', 'microsoft', 'os', 'operating system'],
     category: 'Betriebssysteme',
-    icon: 'mdi-microsoft-windows',
+    icon: icons.microsoftWindows,
     color: 'blue'
   },
   {
@@ -498,7 +500,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Windows 11',
     keywords: ['windows', 'windows 11', 'microsoft', 'os', 'operating system'],
     category: 'Betriebssysteme',
-    icon: 'mdi-microsoft-windows',
+    icon: icons.microsoftWindows,
     color: 'blue'
   },
   {
@@ -506,7 +508,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Ubuntu',
     keywords: ['ubuntu', 'linux', 'os', 'operating system', 'debian', 'server'],
     category: 'Betriebssysteme',
-    icon: 'mdi-ubuntu',
+    icon: icons.ubuntu,
     color: 'orange'
   },
   
@@ -516,7 +518,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Microsoft Word',
     keywords: ['word', 'microsoft', 'office', 'document', 'text', 'ms office'],
     category: 'Office',
-    icon: 'mdi-file-word',
+    icon: icons.fileWord,
     color: 'blue'
   },
   {
@@ -524,7 +526,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Microsoft Excel',
     keywords: ['excel', 'microsoft', 'office', 'spreadsheet', 'data', 'ms office'],
     category: 'Office',
-    icon: 'mdi-file-excel',
+    icon: icons.fileExcel,
     color: 'green'
   },
   {
@@ -532,7 +534,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Microsoft PowerPoint',
     keywords: ['powerpoint', 'microsoft', 'office', 'presentation', 'slides', 'ms office'],
     category: 'Office',
-    icon: 'mdi-file-powerpoint',
+    icon: icons.filePowerpoint,
     color: 'orange'
   },
   {
@@ -540,7 +542,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Microsoft Teams',
     keywords: ['teams', 'microsoft', 'collaboration', 'chat', 'video', 'communication'],
     category: 'Office',
-    icon: 'mdi-microsoft-teams',
+    icon: icons.microsoftTeams,
     color: 'purple'
   },
   {
@@ -548,7 +550,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'LibreOffice',
     keywords: ['libreoffice', 'office', 'linux', 'open-source', 'document', 'spreadsheet', 'presentation'],
     category: 'Office',
-    icon: 'mdi-file-document-multiple',
+    icon: icons.fileDocumentMultiple,
     color: 'green'
   },
   
@@ -558,7 +560,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Adobe Creative Suite',
     keywords: ['adobe', 'photoshop', 'illustrator', 'design', 'creative', 'suite'],
     category: 'Design',
-    icon: 'mdi-adobe',
+    icon: icons.palette,
     color: 'red'
   },
   {
@@ -566,7 +568,7 @@ export const searchableSkills: SearchableSkill[] = [
     label: 'Figma',
     keywords: ['figma', 'design', 'ui', 'ux', 'prototype', 'web design', 'interface'],
     category: 'Design',
-    icon: 'mdi-palette',
+    icon: icons.palette,
     color: 'purple'
   }
 ]
