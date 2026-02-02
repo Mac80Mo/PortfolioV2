@@ -51,12 +51,6 @@ import profileImage from '@/assets/images/profile/_S3A4489_3.jpeg'
   overflow: hidden;
   border: 4px solid #1976D2;
   box-shadow: 0 0 20px rgba(25, 118, 210, 1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.profile-image-wrapper:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(25, 118, 210, 1);
 }
 
 .profile-image {
