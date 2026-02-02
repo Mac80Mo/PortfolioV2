@@ -30,6 +30,11 @@
           @click="scrollTo('certificates')"
         ></v-list-item>
         <v-list-item
+          :prepend-icon="icons.grades"
+          title="Noten/Beurteilung"
+          @click="scrollTo('schule')"
+        ></v-list-item>
+        <v-list-item
           :prepend-icon="icons.school"
           title="Kurse"
           @click="scrollTo('kurse')"

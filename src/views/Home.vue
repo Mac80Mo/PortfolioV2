@@ -15,6 +15,9 @@
     <div id="certificates">
       <Certificates />
     </div>
+    <div id="schule">
+      <Schule />
+    </div>
     <div id="kurse">
       <Kurse />
     </div>
@@ -27,5 +30,6 @@ import About from '../components/About.vue'
 import Skills from '../components/Skills.vue'
 import Suche from '../components/Suche.vue'
 import Certificates from '../components/Certificates.vue'
+import Schule from '../components/Schule.vue'
 import Kurse from '../components/Kurse.vue'
 </script>

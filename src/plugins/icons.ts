@@ -67,6 +67,9 @@ import {
   mdiMicrosoftTeams,
   mdiFileDocumentMultiple,
   mdiPalette,
+  mdiClipboardTextOutline,
+  mdiTagOutline,
+  mdiTrophy,
 } from '@mdi/js'
 
 export const icons = {
@@ -137,4 +140,8 @@ export const icons = {
   microsoftTeams: mdiMicrosoftTeams,
   fileDocumentMultiple: mdiFileDocumentMultiple,
   palette: mdiPalette,
+  grades: mdiClipboardTextOutline,
+  category: mdiTagOutline,
+  clock: mdiClockOutline,
+  trophy: mdiTrophy,
 }

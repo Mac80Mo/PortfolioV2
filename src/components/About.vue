@@ -20,16 +20,16 @@
             </v-card-text>
             <v-card-actions class="mt-auto">
               <v-chip size="small" color="primary" variant="flat">
-                <v-icon start size="small">mdi-domain</v-icon>
+                <v-icon start size="small">{{ icons.school }}</v-icon>
                 {{ abschluss.ihk }}
               </v-chip>
               <v-chip size="small" color="primary" variant="outlined">
-                <v-icon start size="small">mdi-star</v-icon>
+                <v-icon start size="small">{{ icons.trophy }}</v-icon>
                 {{ abschluss.punkte }}
               </v-chip>
               <v-spacer></v-spacer>
               <v-chip size="small" color="primary" variant="flat">
-                <v-icon start size="small">mdi-calendar</v-icon>
+                <v-icon start size="small">{{ icons.calendar }}</v-icon>
                 {{ abschluss.year }}
               </v-chip>
             </v-card-actions>
@@ -41,6 +41,8 @@
 </template>
 
 <script setup lang="ts">
+import { icons } from '../plugins/icons'
+
 interface Abschluss {
   title: string
   description: string
