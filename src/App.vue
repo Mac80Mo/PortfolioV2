@@ -39,6 +39,12 @@
           title="Kurse"
           @click="scrollTo('kurse')"
         ></v-list-item>
+        <v-divider class="my-2"></v-divider>
+        <v-list-item
+          :prepend-icon="icons.fileDocumentMultiple"
+          title="Impressum"
+          @click="navigateTo('impressum')"
+        ></v-list-item>
       </v-list>
     </v-navigation-drawer>
 
@@ -77,10 +83,12 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useTheme } from 'vuetify'
+import { useRouter } from 'vue-router'
 import AnimatedBackground from './components/AnimatedBackground.vue'
 import { icons } from './plugins/icons'
 
 const theme = useTheme()
+const router = useRouter()
 const drawer = ref(false)
 
 const toggleTheme = () => {
@@ -89,10 +97,27 @@ const toggleTheme = () => {
 
 const scrollTo = (id: string) => {
   drawer.value = false
-  const element = document.getElementById(id)
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  // Zur Home navigieren, falls nicht dort
+  if (router.currentRoute.value.path !== '/') {
+    router.push('/').then(() => {
+      setTimeout(() => {
+        const element = document.getElementById(id)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }, 100)
+    })
+  } else {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
   }
+}
+
+const navigateTo = (routeName: string) => {
+  drawer.value = false
+  router.push({ name: routeName })
 }
 </script>
 

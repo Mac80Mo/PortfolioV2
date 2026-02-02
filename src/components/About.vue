@@ -13,7 +13,13 @@
           cols="12"
           md="6"
         >
-          <v-card elevation="4" class="h-100 d-flex flex-column about-card" border="primary">
+          <v-card 
+            elevation="4" 
+            class="h-100 d-flex flex-column about-card" 
+            :class="{ 'clickable-card': abschluss.clickable }"
+            border="primary"
+            @click="abschluss.clickable ? scrollToSchule() : null"
+          >
             <v-card-title>{{ abschluss.title }}</v-card-title>
             <v-card-text class="flex-grow-1">
               {{ abschluss.description }}
@@ -49,6 +55,7 @@ interface Abschluss {
   ihk: string
   punkte: number
   year: string
+  clickable?: boolean
 }
 
 const abschluesse: Abschluss[] = [
@@ -57,7 +64,8 @@ const abschluesse: Abschluss[] = [
     description: 'Zusatz: Künstliche Intelligenz',
     ihk: 'IHK Rhein-Neckar',
     punkte: 77,
-    year: '2026'
+    year: '2026',
+    clickable: true
   },
   {
     title: 'Bürokaufmann',
@@ -67,6 +75,13 @@ const abschluesse: Abschluss[] = [
     year: '2001'
   }
 ]
+
+const scrollToSchule = () => {
+  const element = document.getElementById('schule')
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+}
 </script>
 
 <style scoped>
@@ -76,5 +91,9 @@ const abschluesse: Abschluss[] = [
 
 .about-card {
   border: 3px solid rgba(25, 118, 210, 0.5) !important;
+}
+
+.clickable-card {
+  cursor: pointer;
 }
 </style>
