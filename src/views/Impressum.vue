@@ -14,9 +14,20 @@
                 ausschließlich experimentellen und persönlichen Lernzwecken.
               </p>
               
-              <p class="text-body-2 text-medium-emphasis">
+              <p class="text-body-2 text-medium-emphasis mb-6">
                 Gemäß § 5 TMG besteht daher keine Pflicht zur Angabe eines Impressums.
               </p>
+
+              <v-divider class="my-6"></v-divider>
+
+              <div class="contact-section">
+                <div class="d-flex align-center">
+                  <v-icon class="mr-2" :icon="mdiEmail"></v-icon>
+                  <a :href="mailtoLink" class="text-decoration-none">
+                    {{ emailAddress }}
+                  </a>
+                </div>
+              </div>
             </v-card-text>
           </v-card>
         </v-col>
@@ -26,6 +37,25 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import { mdiEmail } from '@mdi/js'
+
+// Mehrfach-Verschleierung: 
+const decryptEmail = (): string => {
+  
+  const encodedUser = 'bWFyY3VzbW9zZXI='
+  const user = atob(encodedUser)
+  
+  const domainParts = ['w', 'e', 'b']
+  const domain = domainParts.join('')
+  
+  const tld = String.fromCharCode(100, 101)
+  
+  return `${user}@${domain}.${tld}`
+}
+
+const emailAddress = computed(() => decryptEmail())
+const mailtoLink = computed(() => `mailto:${emailAddress.value}`)
 </script>
 
 <style scoped>
