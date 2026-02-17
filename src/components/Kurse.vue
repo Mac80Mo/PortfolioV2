@@ -349,6 +349,18 @@ const kurseData: Kurs[] = [
     icon: icons.vuejs,
     color: 'green'
   },
+  {
+    title: 'Linux',
+    description: 'Linux: Command Line für Beginner - Praxiskurs 2025',
+    anbieter: 'Udemy',
+    sprache: 'Deutsch',
+    dauer: '3,5 Stunden',
+    abschluss: 'Abschlussbescheinigung',
+    datum: 'Februar 2026',
+    sortDate: new Date('2026-02-17'),
+    icon: icons.console,
+    color: 'grey'
+  },
 ]
 
 // Kurse nach Datum absteigend sortieren (neueste zuerst)
