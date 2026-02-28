@@ -71,6 +71,7 @@ import {
   mdiClipboardTextOutline,
   mdiTagOutline,
   mdiTrophy,
+  mdiElectronFramework,
 } from '@mdi/js'
 
 export const icons = {
@@ -146,4 +147,5 @@ export const icons = {
   category: mdiTagOutline,
   clock: mdiClockOutline,
   trophy: mdiTrophy,
+  electronFramework: mdiElectronFramework,
 }

@@ -361,6 +361,18 @@ const kurseData: Kurs[] = [
     icon: icons.console,
     color: 'grey'
   },
+  {
+    title: 'Electron',
+    description: 'Electron - Einstieg in die Entwicklung von Desktop Apps',
+    anbieter: 'Udemy',
+    sprache: 'Deutsch',
+    dauer: '8 Stunden',
+    abschluss: 'Abschlussbescheinigung',
+    datum: 'Februar 2026',
+    sortDate: new Date('2026-02-28'),
+    icon: icons.electronFramework,
+    color: 'cyan'
+  },
 ]
 
 // Kurse nach Datum absteigend sortieren (neueste zuerst)
