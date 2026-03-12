@@ -373,6 +373,18 @@ const kurseData: Kurs[] = [
     icon: icons.electronFramework,
     color: 'cyan'
   },
+  {
+    title: 'Bedarfsanalyse',
+    description: 'Verkaufe wie ein Champion: Fragetechniken und Bedarfsanalyse',
+    anbieter: 'Udemy',
+    sprache: 'Deutsch',
+    dauer: '1 Stunden',
+    abschluss: 'Abschlussbescheinigung',
+    datum: 'März 2026',
+    sortDate: new Date('2026-03-12'),
+    icon: icons.clipboardSearchOutline,
+    color: 'teal'
+  },
 ]
 
 // Kurse nach Datum absteigend sortieren (neueste zuerst)
