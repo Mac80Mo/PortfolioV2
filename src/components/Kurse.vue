@@ -385,6 +385,18 @@ const kurseData: Kurs[] = [
     icon: icons.clipboardSearchOutline,
     color: 'teal'
   },
+  {
+    title: 'KI Voice-Agenten',
+    description: 'Automation mit Vapi, ElevenLabs, n8n & MCP',
+    anbieter: 'Udemy',
+    sprache: 'Deutsch',
+    dauer: '9 Stunden',
+    abschluss: 'Abschlussbescheinigung',
+    datum: 'März 2026',
+    sortDate: new Date('2026-03-19'),
+    icon: icons.robot,
+    color: 'green'
+  },
 ]
 
 // Kurse nach Datum absteigend sortieren (neueste zuerst)
