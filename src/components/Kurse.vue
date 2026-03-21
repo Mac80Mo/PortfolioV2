@@ -397,6 +397,18 @@ const kurseData: Kurs[] = [
     icon: icons.robot,
     color: 'green'
   },
+  {
+    title: 'KI Telefon Assistent',
+    description: 'Anrufe automatisieren & Kosten sparen',
+    anbieter: 'Udemy',
+    sprache: 'Deutsch',
+    dauer: '3,5 Stunden',
+    abschluss: 'Abschlussbescheinigung',
+    datum: 'März 2026',
+    sortDate: new Date('2026-03-21'),
+    icon: icons.robot,
+    color: 'green'
+  },
 ]
 
 // Kurse nach Datum absteigend sortieren (neueste zuerst)
