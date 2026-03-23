@@ -409,6 +409,18 @@ const kurseData: Kurs[] = [
     icon: icons.robot,
     color: 'green'
   },
+  {
+    title: 'KI Transformation',
+    description: 'KI Transformation für Organisationen',
+    anbieter: 'Udemy',
+    sprache: 'Deutsch',
+    dauer: '1,5 Stunden',
+    abschluss: 'Abschlussbescheinigung',
+    datum: 'März 2026',
+    sortDate: new Date('2026-03-23'),
+    icon: icons.brain,
+    color: 'purple'
+  },
 ]
 
 // Kurse nach Datum absteigend sortieren (neueste zuerst)
