@@ -421,6 +421,18 @@ const kurseData: Kurs[] = [
     icon: icons.brain,
     color: 'purple'
   },
+  {
+    title: 'AI Prompt Engineering',
+    description: 'Generative AI + ChatGPT',
+    anbieter: 'Udemy',
+    sprache: 'Englisch',
+    dauer: '1,5 Stunden',
+    abschluss: 'Abschlussbescheinigung',
+    datum: 'März 2026',
+    sortDate: new Date('2026-03-25'),
+    icon: icons.brain,
+    color: 'blue'
+  },
 ]
 
 // Kurse nach Datum absteigend sortieren (neueste zuerst)
