@@ -433,6 +433,18 @@ const kurseData: Kurs[] = [
     icon: icons.brain,
     color: 'blue'
   },
+  {
+    title: 'MCP Masterclass',
+    description: 'Complete Guide to MCP in Python',
+    anbieter: 'Udemy',
+    sprache: 'Englisch',
+    dauer: '7,5 Stunden',
+    abschluss: 'Abschlussbescheinigung',
+    datum: 'März 2026',
+    sortDate: new Date('2026-03-31'),
+    icon: icons.robot,
+    color: 'blue'
+  },
 ]
 
 // Kurse nach Datum absteigend sortieren (neueste zuerst)
