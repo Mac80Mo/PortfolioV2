@@ -445,6 +445,18 @@ const kurseData: Kurs[] = [
     icon: icons.robot,
     color: 'blue'
   },
+  {
+    title: 'Vector Databases',
+    description: 'Fundamentals [NEW]',
+    anbieter: 'Udemy',
+    sprache: 'Englisch',
+    dauer: '4,5 Stunden',
+    abschluss: 'Abschlussbescheinigung',
+    datum: 'April 2026',
+    sortDate: new Date('2026-04-01'),
+    icon: icons.database,
+    color: 'purple'
+  },
 ]
 
 // Kurse nach Datum absteigend sortieren (neueste zuerst)
