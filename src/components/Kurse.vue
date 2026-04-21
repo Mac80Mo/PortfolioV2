@@ -457,6 +457,18 @@ const kurseData: Kurs[] = [
     icon: icons.database,
     color: 'purple'
   },
+  {
+    title: 'Prompt Engineering',
+    description: 'ChatGPT, Claude & Gemini meistern',
+    anbieter: 'Udemy',
+    sprache: 'Deutsch',
+    dauer: '2 Stunden',
+    abschluss: 'Abschlussbescheinigung',
+    datum: 'April 2026',
+    sortDate: new Date('2026-04-21'),
+    icon: icons.brain,
+    color: 'green'
+  },
 ]
 
 // Kurse nach Datum absteigend sortieren (neueste zuerst)
