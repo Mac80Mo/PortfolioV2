@@ -469,6 +469,18 @@ const kurseData: Kurs[] = [
     icon: icons.brain,
     color: 'green'
   },
+  {
+    title: 'AI Coder',
+    description: 'Complete Claude Code & Coding Agents Course',
+    anbieter: 'Udemy',
+    sprache: 'Englisch',
+    dauer: '16 Stunden',
+    abschluss: 'Abschlussbescheinigung',
+    datum: 'Mai 2026',
+    sortDate: new Date('2026-05-02'),
+    icon: icons.brain,
+    color: 'purple'
+  },
 ]
 
 // Kurse nach Datum absteigend sortieren (neueste zuerst)
